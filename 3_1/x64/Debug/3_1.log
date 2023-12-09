@@ -1,0 +1,7 @@
+﻿  func.c
+  main.c
+D:\Study\1 year R\3_1\3_1\3_1\main.c(4,2): warning C4013: 'SetConsoleOutputCP' undefined; assuming extern returning int
+  Generating Code...
+D:\Study\1 year R\3_1\3_1\3_1\func.c(67): warning C4715: 'get_matrix_auto': not all control paths return a value
+D:\Study\1 year R\3_1\3_1\3_1\func.c(80): warning C4715: 'get_matrix': not all control paths return a value
+  3_1.vcxproj -> D:\Study\1 year R\3_1\3_1\x64\Debug\3_1.exe
