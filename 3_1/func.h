@@ -4,6 +4,7 @@ struct matrix {
 	int** matrix;
 	int rows;
 	int columns;
+	int mode;
 };
 
 struct matrix get_matrix(struct matrix* );

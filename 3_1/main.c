@@ -11,5 +11,12 @@ int main() {
 	delete_columns_with_minimal_value_under_diagonal(&matrix);
 	print_array(matrix);
 
+	if (check_results(matrix)) {
+		printf("Результаты сходятся.\n");
+	}
+	else {
+		printf("Введены не тестовые данные либо результаты не сходятся. \n");
+	}
+
 	free_matrix(&matrix);
 }

@@ -1,7 +1,16 @@
 ﻿  func.c
-  main.c
-D:\Study\1 year R\3_1\3_1\3_1\main.c(4,2): warning C4013: 'SetConsoleOutputCP' undefined; assuming extern returning int
-  Generating Code...
-D:\Study\1 year R\3_1\3_1\3_1\func.c(67): warning C4715: 'get_matrix_auto': not all control paths return a value
-D:\Study\1 year R\3_1\3_1\3_1\func.c(80): warning C4715: 'get_matrix': not all control paths return a value
-  3_1.vcxproj -> D:\Study\1 year R\3_1\3_1\x64\Debug\3_1.exe
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(144,13): warning C4098: 'compare_results': 'void' function returning a value
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(148,10): warning C4098: 'compare_results': 'void' function returning a value
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(155,29): warning C4047: '=': 'int **' differs in levels of indirection from 'int *'
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(156,29): warning C4047: '=': 'int **' differs in levels of indirection from 'int *'
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(157,29): warning C4047: '=': 'int **' differs in levels of indirection from 'int *'
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(158,29): warning C4047: '=': 'int **' differs in levels of indirection from 'int *'
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(159,34): warning C4047: 'function': 'int **' differs in levels of indirection from 'int **[4]'
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(159,34): warning C4024: 'compare_results': different types for formal and actual parameter 2
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(159,57): warning C4098: 'check_results': 'void' function returning a value
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(163,12): warning C4098: 'check_results': 'void' function returning a value
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(166,12): warning C4098: 'check_results': 'void' function returning a value
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(170,11): warning C4098: 'check_results': 'void' function returning a value
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(67): warning C4715: 'get_matrix_auto': not all control paths return a value
+D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\3_1\func.c(80): warning C4715: 'get_matrix': not all control paths return a value
+  3_1.vcxproj -> D:\Study\1 year R\Лаба 5 ОАиП\3_1\3_1\x64\Debug\3_1.exe

@@ -40,11 +40,11 @@ void initialize_matrix_with_standard_array(struct matrix* matrix, int* standard_
 }
 
 struct matrix get_matrix_auto(struct matrix* matrix) {
-	int mode = 0;
+	matrix->mode = 0;
 	printf("¬ведите номер тестовой матрицы : 1, 2 \n");
-	scanf_s("%d", &mode);
+	scanf_s("%d", &matrix->mode);
 
-	switch (mode) {
+	switch (matrix->mode) {
 	case 1:
 		matrix->rows = 4;
 		matrix->columns = 4;
@@ -137,9 +137,39 @@ void delete_columns_with_minimal_value_under_diagonal(struct matrix* matrix) {
 	}
 }
 
-//void check_results(struct matrix matrix) {
-//
-//}
+void compare_results(struct matrix matrix, int** expected_results) {
+	for (int i = 0; i < matrix.rows; i++) {
+		for (int j = 0; j < matrix.columns; j++) {
+			if (matrix.matrix[i][j] != expected_results[i][j]) {
+				return 0;
+			}
+		}
+	}
+	return 1;
+}
+
+void check_results(struct matrix matrix) {
+	switch (matrix.mode) {
+	case 1:{
+		int** first_expected_results[4];
+		first_expected_results[0] = (int[]){ 1,4 };
+		first_expected_results[1] = (int[]){ 2,4 };
+		first_expected_results[2] = (int[]){ 5,7 };
+		first_expected_results[3] = (int[]){ 9,7 };
+		return compare_results(matrix, first_expected_results);
+	}
+	case 2: {
+		if (matrix.columns == 0) {
+			return 1;
+		}
+		else {
+			return 0;
+		}
+	}
+	default: 
+		return 0;
+	}
+}
 
 void free_matrix(struct matrix* matrix) {
 	for (int i = 0; i < matrix->rows; i++) {
